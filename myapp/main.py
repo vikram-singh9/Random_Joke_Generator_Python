@@ -16,7 +16,7 @@ def joke_generator():
         return "When did you turnoff your computer last-time? \n \n programmer: maybe it's centuries 😂"
     
 
-    
+
 def main():
     # Customizing the title and intro text for better aesthetics
     st.set_page_config(page_title="Random Joke Generator", page_icon="😂", layout="centered")
@@ -71,7 +71,7 @@ def main():
     # Button to trigger joke fetch
     if st.button("Get Joke", key="joke_button", help="Click to get a random joke", use_container_width=True):
         joke = joke_generator()
-        st.info(joke)
+        st.success(joke)
 
     # Information section
     st.markdown("""
